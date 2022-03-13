@@ -40,10 +40,11 @@ html, body {
   line-height: 130%;
   min-height: 100%;
   z-index: 0;
+  color: #ffffff;
 }
 
 body {
-  background-color: white;
+  background-color: #333333;
 }
 
 a {
@@ -70,8 +71,15 @@ div {
   margin-right: auto;
   margin-left: auto;
   padding: 30px 40px 10px 40px;
-  background-color: rgba(256,256,256,0.9);
   z-index: 1;
+
+
+}
+
+.main-container {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: rgba(20, 20, 20, 0.75);
 }
 
 .navbar-brand {
@@ -146,8 +154,12 @@ body {
 }
 
 nav.navbar {
-  background: white;
+  background: #333333;
   z-index: 1;
+}
+
+.navbar-nav a {
+  color: white !important;
 }
 
 a.anchor{
@@ -166,7 +178,7 @@ a.anchor{
 }
 
 .table-striped tbody tr:nth-of-type(4n+1), tr:nth-of-type(4n+3) {
-  background-color: rgba(210, 240, 240, 0.2) !important;
+  background-color: rgba(210, 240, 240, 0.055) !important;
 }
 
 .table-striped tbody tr:nth-of-type(4n+0), tr:nth-of-type(4n+2) {
@@ -179,7 +191,7 @@ a.anchor{
 
 
 .table-striped-sched tbody tr:nth-of-type(4n+1), tr:nth-of-type(4n+3) {
-  background-color: rgba(230, 230, 240, 0.5) !important;
+  background-color: rgba(230, 230, 240, 0.116) !important;
 }
 
 .table-striped-sched tbody tr:nth-of-type(4n+0), tr:nth-of-type(4n+2) {
@@ -187,7 +199,7 @@ a.anchor{
 }
 
 .table-hover-sched tbody:hover {
-  background-color: rgba(100, 170, 200, 0.2) !important;
+  background-color: rgba(38, 74, 90, 0.2) !important;
 }
 
 .table-striped-disc-cal tbody tr:nth-of-type(4n+0), tr:nth-of-type(4n+1), tr:nth-of-type(4n+2), tr:nth-of-type(4n+3) {
@@ -222,6 +234,10 @@ img.headshot:hover {
 td.txt {
   padding: 2px 8px;
   background-color: white !important;
+}
+
+td.date-hl {
+  background-color: rgba(42,85,31,0.4) !important;
 }
 
 table, th, td {
